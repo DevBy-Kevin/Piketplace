@@ -255,7 +255,7 @@ ol, ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url(/images/mobile-bg2-1.png) top center / 500px no-repeat;
+    background: url(../images/mobile-bg2-1.png) top center / 500px no-repeat;
 }
 
 .services-title {
@@ -514,7 +514,7 @@ ol, ul {
     .services-img {
         padding-top: 10%;
         width: 40%;
-        background: url(/images/mobile-bg2-1.png) top center / 380px no-repeat;
+    background: url(../images/mobile-bg2-1.png) top center / 380px no-repeat;
         background-position: 0px 90px;
     }
     .services-img img {
