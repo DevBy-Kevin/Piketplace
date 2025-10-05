@@ -1,0 +1,702 @@
+/* Générale */
+* {
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Nunito, sans-serif;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 77px;
+    background-color: #e9f1fd;
+    /* overflow-x: hidden; */
+}
+
+.body-white {
+    background: white;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: jost, sans-serif;
+}
+
+ol, ul {
+    padding: 0;
+    margin: 0;
+}
+
+.topbar {
+    height: 77px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.125rem;
+    background-color: #00766a;
+    color: white;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.116);
+    z-index: 10;
+}
+
+.topbar-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.topbar-links {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+}
+
+.topbar-links li:hover, .topbar-links .active {
+    font-weight: 700;
+    transform: translateY(-3px);
+    transition: .3s;
+}
+
+.topbar-links a {
+    margin: 10px;
+}
+
+.topbar-button {
+    background-color: #000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: jost, sans-serif;
+    transition: .3s;
+}
+
+.topbar-button:hover {
+    background-color: #FFF;
+    color: #000;
+}
+
+.footer {
+    display: flex;
+    flex-flow: column;
+    padding-top: 50px;
+    background: white;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: Nunito, sans-serif;
+    font-size: 1.875rem;
+    font-weight: 400;
+}
+
+.footer-nav {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    font-size: 1.3125rem;
+    font-family: jost sans-serif;
+}
+
+.footer-nav li:hover, .experience-list:hover {
+    font-weight: 500;
+    text-decoration: underline;
+    transform: translateX(5px);
+    transition: .3s;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 50px 30px;
+    font-size: 1.125rem;
+}
+
+.copyright p {
+    padding: 0;
+    margin: 0;
+}
+
+/* Section Accueil */
+.banniere {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0 0 150px 150px;
+    color: white;
+    background: linear-gradient(60deg, rgba(0, 118, 106, 1) 0%, rgba(0, 118, 106, 1) 26%, rgba(11, 2, 2, 1) 100%);
+    font-size: 1.44rem;
+    padding-bottom: 50px;
+}
+
+.banniere-text {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: stretch;
+    gap: 10px;
+    margin-left: 90px;
+}
+
+.banniere-title {
+    font-size: 2.19rem;
+    margin: 0;
+    margin-bottom: -20px;
+}
+
+
+.banniere-buttons {
+    max-width: 55%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.community-buttons {
+    max-width: 65%;
+}
+
+.banniere-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #000;
+    color: white;
+    font-size: 1.125rem;
+    font-family: Nunito, sans-serif;
+    flex: none;
+}
+
+.banniere-button:hover {
+    background-color: #FFF;
+    color: #000;
+}
+
+.button-even {
+    background-color: #FFF;
+    color: #000;
+}
+
+.button-even:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.banniere-img {
+    max-width: 500px;
+}
+
+/* Section A propos */
+.about-container {
+    max-width: 1231px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+.about-us {
+    font-family: Nunito, sans-serif;
+}
+
+.about-us-title {
+    width: 100%;
+    margin-bottom: 0;
+    font-size: 1.563rem;
+    font-weight: 500;
+}
+
+.welcome {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.375rem;
+    text-align: justify;
+}
+
+.welcome-title {
+    width: 140%;
+    font-family: jost, sans-serif;
+    font-size: 2.8125rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.services {
+    display: flex;
+    margin-top: 80px;
+    width: 100%;
+}
+
+.services-img {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(/images/mobile-bg2-1.png) top center / 500px no-repeat;
+}
+
+.services-title {
+    font-weight: 700;
+    font-size: 1.56rem;
+}
+
+.services-prest {
+    max-width: 600px;
+    margin-top: -20px;
+    font-size: 1.5rem;
+}
+
+.service-both {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.service {
+    max-width: 250px;
+    font-size: 1.25rem;
+}
+
+.service-title {
+    margin-bottom: -10px;
+    font-size: 1.56rem;
+    font-weight: 700;
+}
+
+/* Section Communauté */
+.community {
+    background: linear-gradient(60deg, rgba(0, 118, 106, 1) 0%, rgba(0, 118, 106, 1) 26%, rgba(11, 2, 2, 1) 100%);
+    font-size: 1.44rem;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.community-container {
+    max-width: 1191px;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.community-title {
+    font-size: 1.56rem;
+    margin-bottom: 0;
+}
+
+.community-subtitle {
+    font-family: jost, sans-serif;
+    font-size: 2.8125rem;
+    font-weight: 700;
+    margin-bottom: -20px;
+}
+
+.community p {
+    max-width: 971px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Section banniere community */
+.banniere-community {
+    border-radius: 0;
+    padding-bottom: 0;
+}
+
+.banniere-community img {
+    width: 600px;
+    max-width: 600px;
+}
+
+/** Section FAQ */
+.price {
+    max-width: 1330px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 15px;
+}
+
+.default {
+    font-family: jost, sans-serif;
+    color: blue;
+    text-decoration: underline;
+}
+
+.faq {
+    font-family: jost, sans-serif;
+    font-size: 1.125rem;
+    text-align: center;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.faq-ask {
+    font-weight: 700;
+}
+
+.faq-title {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.faq-button {
+    color: white;
+    border: solid 2px black;
+}
+
+/***********************************
+***********Contact Page*************
+***********************************/
+.hero-banniere {
+    height: 50vh;
+    text-align: center;
+}
+
+.hero-text {
+    max-width: 680px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    margin: 0;
+    margin-bottom: -20px;
+}
+
+/***********************************
+*************About Page*************
+***********************************/
+.abouts {
+    background: #e9f1fd;
+    color: black;
+    font-size: 1.375rem;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.abouts-container, .about-only {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.about-both {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-only {
+    padding: 50px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
+    flex: 1;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.about-only-container {
+    max-width: 860px;
+    margin: 0 auto 20px;
+    padding: 0 20px;
+}
+
+.about-only:hover {
+    background-color: #00766a;
+    transform: scale(1.03);
+}
+
+.about-only img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.about-title {
+    font-size: 1.875rem;
+}
+
+.team {
+    padding-top: 1px; /**A cause de la marge de h2 **/
+    padding-bottom: 0;
+    margin-bottom: 50px;
+}
+
+.our-team {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    font-size: 2.1875rem;
+    color: black;
+}
+
+.team-member {
+    margin-bottom: -90px;
+}
+
+/* .our-team img{
+    max-width: 400px;
+} */
+
+
+/***********************************
+***********How it works Page********
+***********************************/
+.experience {
+    font-size: 1.375rem;
+    margin-bottom: 50px;
+}
+
+.experience-list {
+    font-family: jost, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 2.5;
+    display: block;
+    cursor: pointer;
+}
+
+.experience-list::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #00000075;
+}
+
+
+
+/***********************************
+***********Media Queries*************
+************************************/
+@media only screen and (max-width: 1085px) {
+    .banniere {
+        border-radius: 0 0 100px 100px;
+    }
+    .banniere-text {
+        margin-left: 60px;
+        font-size: 1.25rem;
+    }
+    .welcome {
+        font-size: 1.25rem;
+        gap: 40px;
+    }
+    .welcome-title {
+        font-size: 2.5rem;
+    }
+    .services-img {
+        padding-top: 10%;
+        width: 40%;
+        background: url(/images/mobile-bg2-1.png) top center / 380px no-repeat;
+        background-position: 0px 90px;
+    }
+    .services-img img {
+        max-width: 250px;
+    }
+    .banniere-community img {
+        max-width: 500px;
+    }
+}
+
+@media only screen and (max-width: 942px) {
+    .banniere {
+        border-radius: 0;
+        flex-flow: column-reverse;
+    }
+    .banniere-text {
+        font-size: 1.375rem;
+        max-width: 900px;
+        padding: 20px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .banniere-buttons {
+        margin: 0 auto;
+    }
+    .about-us {
+        text-align: center;
+    }
+    .welcome {
+        display: block;
+        text-align: center;
+    }
+    .welcome-title {
+        width: 100%;
+        text-align: center;
+    }
+    .services {
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .services-img {
+        display: none;
+    }
+    .service {
+        max-width: 350px;
+        flex: 1;
+        background: #e9f1fd;
+        padding: 20px;
+        border-radius: 10px;
+        transition: background-color 0.3s ease-out, transform 0.3s ease-out;
+    }
+    .service:hover {
+        background-color: #00766a;
+        color: white;
+        transform: scale(1.03);
+    }
+    .community {
+        font-size: 1.25rem;
+    }
+    .community-subtitle {
+        font-size: 2.1875rem;
+        margin: 0 0 -10px;
+    }
+    .faq {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .faq-title {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .banniere-community {
+        padding: 20px 0;
+    }
+    .banniere-community .banniere-img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .topbar {
+        position: absolute;
+    }
+    .cache-phone {
+        display: none;
+    } 
+    .footer-links {
+        align-items: center;
+    }
+    .copyright {
+        flex-direction: column;
+        font-size: 0.9rem;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    html, body {
+        line-height: 1.2;
+    }
+    .banniere {
+        padding-bottom: 20px;
+    }
+    .banniere-text {
+        font-size: 1.25rem;
+    }
+    .banniere-img {
+        max-width: 450px;
+    }
+    .banniere-title {
+        font-size: 2rem;
+    }
+    .banniere-buttons {
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .banniere-buttons .banniere-button {
+        display: block;
+        margin: 0;
+    }
+    .footer {
+        padding-top: 40px;
+    }
+    .footer-links div:first-child {
+        display: none;
+    }
+    .about-us-title {
+        font-size: 1.75rem;
+    }
+    .welcome {
+        font-size: 1.125rem;
+    }
+    .welcome-title {
+        font-size: 2rem;
+    }
+    .services-prest {
+        font-size: 1.25rem;
+    }
+    .service-both {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service {
+        font-size: 1.125rem;
+    }
+    .price {
+        padding: 25px 15px;
+    }
+    .community {
+        font-size: 1.125rem;
+        padding: 25px 0;
+    }
+    .community-title {
+        font-size: 1.375rem;
+    }
+    .community-subtitle {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 465px) {
+    .banniere-img {
+        width: 100%;
+    }
+    .footer {
+        background: rgb(235, 231, 231);
+    }
+    .footer-links {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .faq-title {
+        font-size: 1.5rem;
+        word-wrap: break-word;
+    }
+}
+
+@media only screen and (max-width: 355px) {
+    .faq {
+        display: none;
+    }
+}
