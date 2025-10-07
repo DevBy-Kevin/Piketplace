@@ -44,22 +44,30 @@
         </section>
 
         <!-- Section Formulaire de contact -->
-        <section class="about-container">
+        <section class="about-container contact-about-container">
                 <div class="services">
-                    <div class="services-img">
+                    <div class="services-img contact-services-img">
                         <img src="./images/mobile_piketplace.png" alt="Vue de piketplace sur mobile">
                     </div>
-                    <div>
-                        <div>
+                    <div class="contact-form">
+                        <div class="form-container">
                             <h2 class="form-title">Send Us a Message</h2>
                             <form method="POST" action="#traitement">
-                                <label for="name">Name & First Name</label>
-                                <input type="text" id="name" required>
-                                <label for="email">Name & First Name</label>
-                                <input type="email" id="email" required>
-                                <label for="message">Comment or message</label>
-                                <textarea name="message" id="message" rows="5" cols="30"></textarea>
-                                <input type="submit" value="Submit">
+                                <div class="name-box">
+                                    <label for="name">Name & First Name</label>
+                                    <input type="text" id="name" required class="field-design">
+                                </div>
+                                <div class="email-box">
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" required class="field-design">
+                                </div>
+                                <div class="message-box">
+                                    <label for="message">Comment or message</label>
+                                    <textarea name="message" id="message" rows="7" cols="30" class="field-design" required></textarea>
+                                </div>
+                                <div class="submit-box">
+                                    <input type="submit" value="Submit" class="submit banniere-button">
+                                </div>
                             </form>
                         </div>
                     </div>

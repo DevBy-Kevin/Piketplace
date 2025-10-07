@@ -390,6 +390,88 @@ ol, ul {
     margin-bottom: -20px;
 }
 
+.contact-about-container {
+    margin: 50px auto;
+}
+
+
+.contact-services-img {
+    width: 40%;
+    background: url(../images/mobile-bg2-1.png) top center / 450px no-repeat;
+}
+
+.contact-services-img img {
+    max-width: 300px;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.form-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    background: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 520px;
+    padding: 50px 50px;
+    margin: 0 0 0 auto;
+    font-family: jost, sans-serif;
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-title {
+    font-size: 1.875rem;
+    text-align: center;
+}
+
+form div {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    text-align: left;
+}
+
+.field-design {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+#message {
+    border-color: red;
+}
+
+.submit-box {
+    align-self: self-start;
+    margin: 0;
+    margin-top: 15px;
+}
+
+.submit {
+    font-size: 1rem;
+    font-family: jost, sans-serif;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
 /***********************************
 *************About Page*************
 ***********************************/
@@ -409,7 +491,7 @@ ol, ul {
 
 .about-both {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
 }
 
 .about-only {
@@ -419,6 +501,11 @@ ol, ul {
     background-color: white;
     flex: 1;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    justify-content: center;
+}
+
+.about-only p {
+    margin-top: 0;
 }
 
 .about-only-container {
@@ -443,6 +530,7 @@ ol, ul {
 
 .about-title {
     font-size: 1.875rem;
+    margin-bottom: 15px;
 }
 
 .team {
@@ -453,7 +541,7 @@ ol, ul {
 
 .our-team {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: space-evenly;
     font-size: 2.1875rem;
     color: black;
@@ -463,9 +551,16 @@ ol, ul {
     margin-bottom: -90px;
 }
 
-/* .our-team img{
-    max-width: 400px;
-} */
+.team-member img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.our-team legend {
+    background: #e9f1fd;
+    padding: 5px 0;
+}
 
 
 /***********************************
@@ -491,6 +586,19 @@ ol, ul {
     border-bottom: 2px solid #00000075;
 }
 
+/***********************************
+*************Benefits***************
+************************************/
+.Benefits-white {
+    padding-top: 30px;
+}
+.special-width {
+    min-width: 310px;
+}
+
+.Benefits p {
+    margin-top: 15px;
+}
 
 
 /***********************************
@@ -514,7 +622,7 @@ ol, ul {
     .services-img {
         padding-top: 10%;
         width: 40%;
-    background: url(../images/mobile-bg2-1.png) top center / 380px no-repeat;
+        background: url(../images/mobile-bg2-1.png) top center / 380px no-repeat;
         background-position: 0px 90px;
     }
     .services-img img {
@@ -522,6 +630,10 @@ ol, ul {
     }
     .banniere-community img {
         max-width: 500px;
+    }
+    /**Benefits**/
+    .Benefits {
+        padding: 40px 0;
     }
 }
 
@@ -594,6 +706,14 @@ ol, ul {
     .banniere-community .banniere-img {
         display: none;
     }
+    /**Contact**/
+    .form-container {
+        margin: 0 auto;
+    }
+    /**About**/ 
+    .our-team {
+        font-size: 1.7rem;
+    }
 }
 
 @media only screen and (max-width: 780px) {
@@ -610,6 +730,13 @@ ol, ul {
         flex-direction: column;
         font-size: 0.9rem;
         align-items: center;
+    }
+    /**About**/
+    .about-both {
+        flex-direction: column;
+    }
+    .our-team {
+        font-size: 1.25rem;
     }
 }
 
@@ -676,6 +803,18 @@ ol, ul {
     .community-subtitle {
         font-size: 2rem;
     }
+    /**About**/
+    .our-team {
+        flex-direction: column;
+        gap: 20px;
+        font-size: 1.25rem;
+    }
+    .team-member {
+        margin-bottom: 0;
+    }
+    .team-member  img{
+        width: 70%;
+    }
 }
 
 @media only screen and (max-width: 465px) {
@@ -683,7 +822,7 @@ ol, ul {
         width: 100%;
     }
     .footer {
-        background: rgb(235, 231, 231);
+        background: rgb(248, 248, 248);
     }
     .footer-links {
         flex-direction: column;
@@ -692,6 +831,10 @@ ol, ul {
     .faq-title {
         font-size: 1.5rem;
         word-wrap: break-word;
+    }
+    /**Contact**/ 
+    .form-container {
+        padding: 40px 30px;
     }
 }
 
