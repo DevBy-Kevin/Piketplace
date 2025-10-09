@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,20 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito:ital@0;1&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito:ital@0;1&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <title>Piketplace - Contact</title>
+    <script src="./main.js" defer></script>
 </head>
+
 <body>
     <!-- Le HEADER -->
     <header class="topbar">
         <div>
-            <a href="index.html"><img src="./images/logo.png" alt="logo du site piketplace" class="topbar-logo logo" width="50px" height="50px"></a>
+            <a href="index.html"><img src="./images/logo.png" alt="logo du site piketplace" class="topbar-logo logo"
+                    width="50px" height="50px"></a>
         </div>
         <nav class="cache-phone">
             <ul class="topbar-links">
@@ -33,76 +39,80 @@
 
     <main>
         <!-- Première section -->
-        <section class="banniere hero-banniere">
+        <section class="banniere reveal hero-banniere">
             <div class="hero-text">
-                <div>Home - Contact</div>
-                <h1 class="hero-title">Contact</h1>
-                <p>
-                    Uncover the narrative behind Piketplace, understanding our core values and the community we’re fostering
+                <div class="reveal-1">Home - Contact</div>
+                <h1 class="hero-title reveal-2">Contact</h1>
+                <p class="reveal-3">
+                    Uncover the narrative behind Piketplace, understanding our core values and the community we’re
+                    fostering
                 </p>
             </div>
         </section>
 
         <!-- Section Formulaire de contact -->
         <section class="about-container contact-about-container">
-                <div class="services">
-                    <div class="services-img contact-services-img">
-                        <img src="./images/mobile_piketplace.png" alt="Vue de piketplace sur mobile">
-                    </div>
-                    <div class="contact-form">
-                        <div class="form-container">
-                            <h2 class="form-title">Send Us a Message</h2>
-                            <form method="POST" action="#traitement">
-                                <div class="name-box">
-                                    <label for="name">Name & First Name</label>
-                                    <input type="text" id="name" required class="field-design">
-                                </div>
-                                <div class="email-box">
-                                    <label for="email">Email:</label>
-                                    <input type="email" id="email" required class="field-design">
-                                </div>
-                                <div class="message-box">
-                                    <label for="message">Comment or message</label>
-                                    <textarea name="message" id="message" rows="7" cols="30" class="field-design" required></textarea>
-                                </div>
-                                <div class="submit-box">
-                                    <input type="submit" value="Submit" class="submit banniere-button">
-                                </div>
-                            </form>
-                        </div>
+            <div class="services reveal">
+                <div class="services-img reveal-1 contact-services-img">
+                    <img src="./images/mobile_piketplace.png" alt="Vue de piketplace sur mobile">
+                </div>
+                <div class="contact-form">
+                    <div class="form-container">
+                        <h2 class="form-title reveal-1">Send Us a Message</h2>
+                        <form method="POST" action="#traitement">
+                            <div class="name-box reveal-2">
+                                <label for="name">Name & First Name</label>
+                                <input type="text" id="name" required class="field-design">
+                            </div>
+                            <div class="email-box reveal-2">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" required class="field-design">
+                            </div>
+                            <div class="message-box reveal-2">
+                                <label for="message">Comment or message</label>
+                                <textarea name="message" id="message" rows="7" cols="30" class="field-design"
+                                    required></textarea>
+                            </div>
+                            <div class="submit-box reveal-2">
+                                <input type="submit" value="Submit" class="submit banniere-button">
+                            </div>
+                        </form>
                     </div>
                 </div>
+            </div>
         </section>
 
         <!-- Section banniere community -->
-        <section class="banniere banniere-community">
+        <section class="banniere reveal banniere-community">
             <div class="banniere-text">
-                <h1 class="banniere-title">Voices from the Piketplace Community</h1>
-                <p>
+                <h1 class="banniere-title reveal-2">Voices from the Piketplace Community</h1>
+                <p class="reveal-3">
                     At Piketplace, the heart of our platform lies in the vibrant and diverse community that comes
                     together to buy, sell, and connect.
                 </p>
-                <div class="banniere-buttons community-buttons">
+                <div class="banniere-buttons reveal-4 community-buttons">
                     <a class="banniere-button" href="https://testnet.piketplace.com/">Testnet</a>
                     <a class="banniere-button button-even" href="https://pifestmap.piketplace.com/">Pi FestMap</a>
                     <a class="banniere-button" href="https://mainnet.piketplace.com/">Mainnet</a>
                 </div>
             </div>
             <div>
-                <img class="banniere-img" src="./images/Mobile-pro.png" alt="Une visuel de piketplace sur smartphone">
+                <img class="banniere-img reveal-1" src="./images/Mobile-pro.png"
+                    alt="Une visuel de piketplace sur smartphone">
             </div>
         </section>
     </main>
 
     <!-- Le FOOTER -->
-    <footer class="footer">
+    <footer class="footer reveal">
         <div class="footer-links">
             <div>
-                <a href="index.html"><img class="footer-logo logo" src="./images/logo.png" alt="logo du site" width="100px" height="100px"></a>
+                <a href="index.html"><img class="footer-logo logo reveal-1" src="./images/logo.png" alt="logo du site"
+                        width="100px" height="100px"></a>
             </div>
             <div>
-                <h2 class="footer-title">Userful Links</h2> 
-                <ul class="footer-nav">
+                <h2 class="footer-title reveal-2">Userful Links</h2>
+                <ul class="footer-nav reveal-3">
                     <li><a href="how_it_works.html">How it Works</a></li>
                     <li><a href="https://mainnet.piketplace.com/#/">Mainnet</a></li>
                     <li><a href="https://mainnet.piketplace.com/#/">Testnet</a></li>
@@ -110,8 +120,8 @@
                 </ul>
             </div>
             <div>
-                <h2 class="footer-title">Quick Links</h2>
-                <ul class="footer-nav">
+                <h2 class="footer-title reveal-2">Quick Links</h2>
+                <ul class="footer-nav reveal-3">
                     <li><a href="https://faq.piketplace.com/">FAQ</a></li>
                     <li><a href="Benefits.html">Benefits and Features</a></li>
                     <li><a href="https://blog.piketplace.com/">Blog</a></li>
@@ -120,10 +130,11 @@
             </div>
         </div>
 
-        <div class="copyright">
+        <div class="copyright reveal-1">
             <p>© 2024 Piketplace, All Right Reserved</p>
             <p>Terms & Condition | ​privacy Policy</p>
         </div>
     </footer>
 </body>
+
 </html>

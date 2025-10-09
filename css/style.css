@@ -4,7 +4,8 @@
     list-style: none;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     font-family: Nunito, sans-serif;
@@ -27,15 +28,62 @@ a {
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: jost, sans-serif;
 }
 
-ol, ul {
+ol,
+ul {
     padding: 0;
     margin: 0;
 }
 
+/** L'animation avec le JS **/
+.reveal-loaded .reveal [class*="reveal-"] {
+    opacity: 0 !important;
+    transform: translateY(30px) !important;
+    transition: 0s !important;
+}
+
+.reveal-loaded [class*="reveal-"] {
+    transition: .8s cubic-bezier(.5, 0, 0, 1);
+}
+
+.reveal-loaded .reveal-1 {
+    transition-delay: .1s;
+}
+
+.reveal-loaded .reveal-2 {
+    transition-delay: .2s;
+}
+
+.reveal-loaded .reveal-3 {
+    transition-delay: .3s;
+}
+
+.reveal-loaded .reveal-4 {
+    transition-delay: .4s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal [class*="reveal-"] {
+        opacity: 1 !important;
+        transform: translateY(0px) !important;
+    }
+
+    [class*="reveal-"] {
+        transition-duration: 0s !important;
+        transition-delay: 0s !important;
+    }
+}
+
+
+/** Page header and footer **/
 .topbar {
     height: 77px;
     position: fixed;
@@ -70,7 +118,8 @@ ol, ul {
     padding: 0;
 }
 
-.topbar-links li:hover, .topbar-links .active {
+.topbar-links li:hover,
+.topbar-links .active {
     font-weight: 700;
     transform: translateY(-3px);
     transition: .3s;
@@ -121,7 +170,8 @@ ol, ul {
     font-family: jost sans-serif;
 }
 
-.footer-nav li:hover, .experience-list:hover {
+.footer-nav li:hover,
+.experience-list:hover {
     font-weight: 500;
     text-decoration: underline;
     transform: translateX(5px);
@@ -483,7 +533,8 @@ label {
     padding: 80px 0;
 }
 
-.abouts-container, .about-only {
+.abouts-container,
+.about-only {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
@@ -534,7 +585,8 @@ label {
 }
 
 .team {
-    padding-top: 1px; /**A cause de la marge de h2 **/
+    padding-top: 1px;
+    /**A cause de la marge de h2 **/
     padding-bottom: 0;
     margin-bottom: 50px;
 }
@@ -592,6 +644,7 @@ label {
 .Benefits-white {
     padding-top: 30px;
 }
+
 .special-width {
     min-width: 310px;
 }
@@ -608,29 +661,36 @@ label {
     .banniere {
         border-radius: 0 0 100px 100px;
     }
+
     .banniere-text {
         margin-left: 60px;
         font-size: 1.25rem;
     }
+
     .welcome {
         font-size: 1.25rem;
         gap: 40px;
     }
+
     .welcome-title {
         font-size: 2.5rem;
     }
+
     .services-img {
         padding-top: 10%;
         width: 40%;
         background: url(../images/mobile-bg2-1.png) top center / 380px no-repeat;
         background-position: 0px 90px;
     }
+
     .services-img img {
         max-width: 250px;
     }
+
     .banniere-community img {
         max-width: 500px;
     }
+
     /**Benefits**/
     .Benefits {
         padding: 40px 0;
@@ -642,6 +702,7 @@ label {
         border-radius: 0;
         flex-flow: column-reverse;
     }
+
     .banniere-text {
         font-size: 1.375rem;
         max-width: 900px;
@@ -649,29 +710,36 @@ label {
         margin: 0 auto;
         text-align: center;
     }
+
     .banniere-buttons {
         margin: 0 auto;
     }
+
     .about-us {
         text-align: center;
     }
+
     .welcome {
         display: block;
         text-align: center;
     }
+
     .welcome-title {
         width: 100%;
         text-align: center;
     }
+
     .services {
         justify-content: center;
         text-align: center;
         margin-top: 50px;
     }
+
     .services-img {
         display: none;
     }
-    .service {
+
+    .service-both .service {
         max-width: 350px;
         flex: 1;
         background: #e9f1fd;
@@ -679,38 +747,47 @@ label {
         border-radius: 10px;
         transition: background-color 0.3s ease-out, transform 0.3s ease-out;
     }
-    .service:hover {
+
+    .service-both .service:hover {
         background-color: #00766a;
         color: white;
         transform: scale(1.03);
     }
+
     .community {
         font-size: 1.25rem;
     }
+
     .community-subtitle {
         font-size: 2.1875rem;
         margin: 0 0 -10px;
     }
+
     .faq {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .faq-title {
         margin: 0;
         margin-bottom: 20px;
     }
+
     .banniere-community {
         padding: 20px 0;
     }
+
     .banniere-community .banniere-img {
         display: none;
     }
+
     /**Contact**/
     .form-container {
         margin: 0 auto;
     }
-    /**About**/ 
+
+    /**About**/
     .our-team {
         font-size: 1.7rem;
     }
@@ -720,99 +797,127 @@ label {
     .topbar {
         position: absolute;
     }
+
     .cache-phone {
         display: none;
-    } 
+    }
+
     .footer-links {
         align-items: center;
     }
+
     .copyright {
         flex-direction: column;
         font-size: 0.9rem;
         align-items: center;
     }
+
     /**About**/
     .about-both {
         flex-direction: column;
     }
+
     .our-team {
         font-size: 1.25rem;
     }
 }
 
 @media only screen and (max-width: 650px) {
-    html, body {
+
+    html,
+    body {
         line-height: 1.2;
     }
+
     .banniere {
         padding-bottom: 20px;
     }
+
     .banniere-text {
         font-size: 1.25rem;
     }
+
     .banniere-img {
         max-width: 450px;
     }
+
     .banniere-title {
         font-size: 2rem;
     }
+
     .banniere-buttons {
         flex-flow: row wrap;
         justify-content: center;
         gap: 10px;
     }
+
     .banniere-buttons .banniere-button {
         display: block;
         margin: 0;
     }
+
     .footer {
         padding-top: 40px;
     }
+
     .footer-links div:first-child {
         display: none;
     }
+
     .about-us-title {
         font-size: 1.75rem;
     }
+
     .welcome {
         font-size: 1.125rem;
     }
+
     .welcome-title {
         font-size: 2rem;
     }
+
     .services-prest {
         font-size: 1.25rem;
     }
+
     .service-both {
         flex-direction: column;
         align-items: center;
     }
+
     .service {
         font-size: 1.125rem;
     }
+
     .price {
         padding: 25px 15px;
     }
+
     .community {
         font-size: 1.125rem;
         padding: 25px 0;
     }
+
     .community-title {
         font-size: 1.375rem;
     }
+
     .community-subtitle {
         font-size: 2rem;
     }
+
     /**About**/
     .our-team {
         flex-direction: column;
         gap: 20px;
         font-size: 1.25rem;
     }
+
     .team-member {
         margin-bottom: 0;
     }
-    .team-member  img{
+
+    .team-member img {
         width: 70%;
     }
 }
@@ -821,18 +926,22 @@ label {
     .banniere-img {
         width: 100%;
     }
+
     .footer {
         background: rgb(248, 248, 248);
     }
+
     .footer-links {
         flex-direction: column;
         gap: 40px;
     }
+
     .faq-title {
         font-size: 1.5rem;
         word-wrap: break-word;
     }
-    /**Contact**/ 
+
+    /**Contact**/
     .form-container {
         padding: 40px 30px;
     }
