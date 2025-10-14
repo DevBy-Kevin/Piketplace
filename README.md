@@ -10,7 +10,7 @@ Voici la version mise à jour du `README.md` :
 
 ## Aperçu du projet
 
-![Screenshot](https://devby-kevin.github.io/Piketplace/assets/img/screenshot.png)
+![Screenshot](https://devby-kevin.github.io/Piketplace/img/mobile_piketplace.png)
 
 **Site en ligne** : [Piketplace - Démo](https://devby-kevin.github.io/Piketplace/)
 
