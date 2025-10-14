@@ -4,7 +4,7 @@
 
 ## Aperçu du projet
 
-![Screenshot](https://devby-kevin.github.io/Piketplace/img/mobile_piketplace.png)
+![Screenshot](https://devby-kevin.github.io/Piketplace/images\mobile_piketplace.png)
 
 **Site en ligne** : [Piketplace - Démo](https://devby-kevin.github.io/Piketplace/)
 
