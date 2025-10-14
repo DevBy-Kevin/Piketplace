@@ -1,9 +1,3 @@
-Ah, je comprends mieux maintenant ! Merci pour la précision. Je vais ajuster le `README.md` en tenant compte du fait que le site est une **vitrine** pour l'application **Piketplace** et non un site e-commerce complet.
-
-Voici la version mise à jour du `README.md` :
-
----
-
 # Piketplace - Site Vitrine
 
 **Piketplace** est un site vitrine présentant une application e-commerce fictive. Ce projet a été conçu pour exposer les fonctionnalités de l'application Piketplace à travers une interface moderne et responsive. Il s'agit d'un projet d'entraînement visant à renforcer mes compétences en développement web.
