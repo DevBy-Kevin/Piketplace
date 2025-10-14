@@ -23,11 +23,22 @@
             <a href="index.html"><img src="./images/logo.png" alt="logo du site piketplace" class="topbar-logo logo"
                     width="50px" height="50px"></a>
         </div>
-        <nav class="cache-phone">
+        <div class="menu-toggle" id="menu-toggle">
+            <!-- Burger icon -->
+            <svg class="icon burger-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+                <path d="M3 6h18M3 12h18M3 18h18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+
+            <!-- Close (X) icon -->
+            <svg class="icon close-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+                <path d="M6 6l12 12M6 18L18 6" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <nav class="cache-phone nav-topbar">
             <ul class="topbar-links">
-                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="about.html">A bout</a></li>
-                <li class="active"><a href="Benefits.html">Benefits and Features</a></li>
+                <li><a href="Benefits.html">Benefits and Features</a></li>
                 <li><a href="how_it_works.html">How It Works</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>

@@ -21,15 +21,25 @@
     <header class="topbar">
         <div>
             <a href="index.html"><img src="./images/logo.png" alt="logo du site piketplace" class="topbar-logo logo"
-                    width="50px" height="50px">
-            </a>
+                    width="50px" height="50px"></a>
         </div>
-        <nav class="cache-phone">
+        <div class="menu-toggle" id="menu-toggle">
+            <!-- Burger icon -->
+            <svg class="icon burger-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+                <path d="M3 6h18M3 12h18M3 18h18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+
+            <!-- Close (X) icon -->
+            <svg class="icon close-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+                <path d="M6 6l12 12M6 18L18 6" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <nav class="cache-phone nav-topbar">
             <ul class="topbar-links">
-                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="about.html">A bout</a></li>
                 <li><a href="Benefits.html">Benefits and Features</a></li>
-                <li class="active"><a href="how_it_works.html">How It Works</a></li>
+                <li><a href="how_it_works.html">How It Works</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -61,12 +71,67 @@
                 </p>
                 <div class="experience-lists reveal-3">
                     <ol>
-                        <li class="experience-list">1-Sign Up for Free</li>
-                        <li class="experience-list">2-Explore the Marketplace</li>
-                        <li class="experience-list">3-Buyer Experience</li>
-                        <li class="experience-list">4-Seller Experience</li>
-                        <li class="experience-list">5-Delivery Partner Experience</li>
-                        <li class="experience-list">6-Community Engagement</li>
+                        <div class="list-item">
+                            <li class="experience-list">1-Sign Up for Free</li>
+                            <div class="js-cache">
+                                Get started by signing up for a free Piketplace account. Joining our community is easy
+                                and takes just a few minutes. Simply visit mainnet.piketplace.com and click on « Login »
+                                in the menu. No need for an email – your connection is directly secured through
+                                Pinetwork’s Auth Security. You can also test the platform’s features by visiting
+                                testnet.piketplace.com
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <li class="experience-list">2-Explore the Marketplace</li>
+                            <div class="js-cache">
+                                Once you’re logged in, dive into the marketplace to discover a wide range of products
+                                and services from various sellers. Piketplace caters to diverse interests, ensuring
+                                there’s something for everyone.
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <li class="experience-list">3-Buyer Experience</li>
+                            <div class="js-cache">
+                                <strong>a. Find Your Desired Product</strong>
+                                Use our user-friendly search and filter options to locate the products you’re interested
+                                in. Whether you’re looking for handmade crafts, vintage items, or everyday essentials,
+                                Piketplace has it all.
+                                <strong>b. Place Your Order with Pi Cryptocurrency</strong>
+                                When you find the perfect item, proceed to checkout. Piketplace transactions are
+                                conducted using the cryptocurrency Pi from Pinetwork, ensuring secure and efficient
+                                payments.
+                                <strong>c. Track Your Order</strong>
+                                Stay informed about your purchase with real-time order tracking. Know exactly when your
+                                item is shipped and when it’s expected to arrive.
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <li class="experience-list">4-Seller Experience</li>
+                            <div class="js-cache">
+                                Once you’re logged in, dive into the marketplace to discover a wide range of products
+                                and services from various sellers. Piketplace caters to diverse interests, ensuring
+                                there’s something for everyone.
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <li class="experience-list">5-Delivery Partner Experience</li>
+                            <div class="js-cache">
+                                Delivery partners play a crucial role in ensuring timely and efficient deliveries. Once
+                                registered, you can browse available delivery requests, accept jobs that fit your
+                                schedule,
+                                and earn Pi for each successful delivery. Piketplace provides a rating system to help
+                                you
+                                build your reputation within the community.
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <li class="experience-list">6-Community Engagement</li>
+                            <div class="js-cache">
+                                Once you’re logged in, dive into the marketplace to discover a wide range of products
+                                and services from various sellers. Piketplace caters to diverse interests, ensuring
+                                there’s something for everyone.
+                            </div>
+                        </div>
                     </ol>
                 </div>
         </section>

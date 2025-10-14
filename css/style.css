@@ -43,6 +43,8 @@ ul {
     margin: 0;
 }
 
+
+
 /** L'animation avec le JS **/
 .reveal-loaded .reveal [class*="reveal-"] {
     opacity: 0 !important;
@@ -140,6 +142,33 @@ ul {
 .topbar-button:hover {
     background-color: #FFF;
     color: #000;
+}
+
+/*** Navigation sur phone ***/
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    display: none;
+    border: 1px solid #555;
+    box-shadow: 2px 2px 4px #555;
+    padding: 2px;
+}
+
+.burger-icon {
+  display: block;
+}
+
+.menu-toggle.open .burger-icon {
+    display: none;
+}
+
+.menu-toggle.open .close-icon {
+    display: block;
 }
 
 .footer {
@@ -632,11 +661,35 @@ label {
     cursor: pointer;
 }
 
-.experience-list::after {
+.list-item::after {
     content: "";
     display: block;
     border-bottom: 2px solid #00000075;
 }
+
+.js-cache {
+    display: none;
+    font-size: 1.125rem;
+    background: #e9f1fd;
+    max-width: 820px;
+    margin: 0 auto;
+    margin-top: -5px;
+    padding: 5px 20px;
+    max-height: 2000px;
+}
+
+.js-cache strong {
+    display: block;
+    margin-top: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.list-active .js-cache {
+    display: block;
+    animation: slideInh 0.3s ease forwards;
+}
+
 
 /***********************************
 *************Benefits***************
@@ -802,6 +855,42 @@ label {
         display: none;
     }
 
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-topbar {
+        position: absolute;
+        top: 77px;
+        right: 0;
+        min-width: 50%;
+        max-width: 500px;
+        background: #00766a;
+        margin: 0 auto;
+        min-height: 320px;
+        border-radius: 0px 0px 20px 20px;
+        border-bottom: 2px solid #00000071;
+        border-left: 2px solid #00000071;
+        text-align: center;
+    }
+
+    .topbar-links {
+        flex-flow: column nowrap;
+        margin: 0 auto;
+    }
+
+    .nav-topbar.open {
+        display: flex;
+        animation: slideIn 0.5s ease forwards;
+    }
+
+    .nav-topbar li {
+        display: block;
+        padding: 1rem;
+        border-bottom: 1px solid #555;
+    }
+
+
     .footer-links {
         align-items: center;
     }
@@ -951,4 +1040,27 @@ label {
     .faq {
         display: none;
     }
+}
+
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInh {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
